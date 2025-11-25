@@ -18,7 +18,7 @@
                 </div>
                 
                 <div class="input-group">
-                    <label for="numberInput">Number (×5 seconds)</label>
+                    <label for="numberInput">Number (×10 minutes)</label>
                     <input type="number" id="numberInput" placeholder="Enter number" min="1">
                 </div>
                 
@@ -95,7 +95,7 @@
                 return;
             }
 
-            totalTime = number * 5;
+            totalTime = number * 10 * 60; // number × 10 minutes × 60 seconds
             timeLeft = totalTime;
             displayName.textContent = name;
 
